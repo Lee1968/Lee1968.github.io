@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-devcie-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi Lee</title>
+
+    <style>
+    button { 
+        background-color: coral;
+        }
+    .text {
+        color:blue;font-size: xx-large;
+        }
+    .my-img {
+        width:300px;
+        height: 300px;
+        background-image: url('./img/Lee3.jpg')
+
+    }
+
+    }
+    </style>
+
+    <!--JavaScript-->
+    <script>
+    function onAlert () { 
+        alert('Hi Lee Kimhuang...!!');
+    }
+
+    function onAlertMyText (text) {
+               var mergeText = text + document.getElementById('myText').value;
+               alert(mergeText);
+    }
+
+    </script>
+</head>
+<body>
+    Hello Lee<br>
+    <!-- Img Tag -->
+    <img style="width:300px; height:300px;" src="./img/Lee2.jpg"></img>
+    <br>
+    <img class="my-img" src="./img/Lee3.jpg"></img>
+
+    <h1>Lee</h1>
+    <h1>Likhitsan</h1>
+    <h2>Suraphong</h2>
+    <button class="text">Lee1968</button><br><br>
+    <button><h2 style="color:blue">Likhit</h2></button><br><br><br>
+    <button onclick="onAlert()" style="background-color:#FF33D9"><h3 style=color:#33FF4D>Kimhuang</h3></button>
+
+    <hr/><br/>
+    Enter Your Name: <input type="text" id="myText"></input>
+    <button onclick="onAlertMyText('Welcome to my world!!.... ')">OK</button>
+
+</body>
+</html>
